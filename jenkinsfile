@@ -12,7 +12,11 @@ pipeline {
                 build quietPeriod: 0, job: 'myfirst_job'
                  }
                          }
-           
+           stage("test") {
+            steps {
+                build quietPeriod: 0, job: 'myfirst_job'
+                 }
+                         }   
         }
     }
 
