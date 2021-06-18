@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('from Git Build') {
+            steps {
+                echo 'Hello World'
+                   }
+                        }
+        stage("deploy") {
+            steps {
+                build quietPeriod: 0, job: 'myfirst_job'
+                 }
+                         }
+           
+        }
+    }
+
