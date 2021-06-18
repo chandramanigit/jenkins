@@ -14,7 +14,7 @@ pipeline {
                          }
            stage("test") {
             steps {
-                build quietPeriod: 0, job: 'myfirst_job'
+                build quietPeriod: 0, job: 'my2nd_project'
                  }
                          }   
         }
